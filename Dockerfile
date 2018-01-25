@@ -39,3 +39,4 @@ RUN helm init --client-only
 # Plugin is downloaded to /tmp, which must exist
 RUN mkdir /tmp
 RUN helm plugin install https://github.com/databus23/helm-diff
+RUN rm -rf /tmp/helm-diff
